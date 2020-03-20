@@ -1,0 +1,21 @@
+.header {
+  padding: 2rem;
+  background-color: #333333;
+  h1,
+  h2,
+  h3 {
+    color: #dcdcdc;
+  }
+}
+
+.gallery {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .videoContentContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
