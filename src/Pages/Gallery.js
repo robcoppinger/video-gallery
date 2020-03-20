@@ -10,6 +10,7 @@ export const Gallery = () => {
         {VideoList.map(video => (
           <VideoCard video={video} />
         ))}
+        <div style={{ width: "23%" }} />
       </div>
     </div>
   );
