@@ -1,9 +1,8 @@
 .videoCardContainer {
-  width: 23%;
+  flex: 1 0 21%;
+  margin: 2rem;
   min-height: 5rem;
   background-color: #ffffff;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   border-radius: 5px;
   overflow: hidden;
   transition: all 500ms !important;

@@ -10,7 +10,7 @@ export const Gallery = () => {
         {VideoList.map(video => (
           <VideoCard video={video} />
         ))}
-        <div style={{ width: "23%" }} />
+        <div style={{ flex: "1 0 21%", margin: "2rem" }} />
       </div>
     </div>
   );

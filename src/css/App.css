@@ -72,7 +72,7 @@ button:hover {
   margin: 1px auto;
   margin-top: 0;
   margin-bottom: 0;
-  width: 150rem;
+  max-width: 150rem;
 }
 
 /* Large Devices, Wide Screens */
