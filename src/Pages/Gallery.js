@@ -8,7 +8,7 @@ export const Gallery = () => {
     <div className="contentContainer gallery">
       <div className="videoContentContainer">
         {VideoList.map(video => (
-          <VideoCard video={video} />
+          <VideoCard key={video.id} video={video} />
         ))}
         <div style={{ flex: "1 0 21%", margin: "2rem" }} />
       </div>

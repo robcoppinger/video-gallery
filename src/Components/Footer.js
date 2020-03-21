@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga";
 
 export const Footer = () => (
   <div className="footer">
@@ -9,18 +10,26 @@ export const Footer = () => (
         </p>
       </div>
       <div className="footerIcons">
-        <a href="https://www.instagram.com/rob.coppinger/">
+        <ReactGA.OutboundLink
+          eventLabel="Instagram Link Clicked"
+          to="https://www.instagram.com/rob.coppinger/"
+          target="_blank"
+        >
           <img
             className="footerIcon"
             src={require("../images/IG_Glyph_Fill.png")}
           />
-        </a>
-        <a href="https://github.com/robcoppinger/video-gallery">
+        </ReactGA.OutboundLink>
+        <ReactGA.OutboundLink
+          eventLabel="GitHub Link Clicked"
+          to="https://github.com/robcoppinger/video-gallery"
+          target="_blank"
+        >
           <img
             className="footerIcon"
             src={require("../images/GitHub-Mark-Light-64px.png")}
           />
-        </a>
+        </ReactGA.OutboundLink>
       </div>
     </div>
   </div>
