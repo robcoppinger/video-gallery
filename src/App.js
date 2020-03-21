@@ -1,15 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./css/App.css";
 import "./css/Main.scss";
 import { Gallery } from "./Pages/Gallery";
 import { Header } from "./Components/Header";
+import { Footer } from "./Components/Footer";
 
 function App() {
   return (
     <div>
       <Header />
-      <Gallery />
+      <div className="body">
+        <Gallery />
+      </div>
+      <Footer />
     </div>
   );
 }
