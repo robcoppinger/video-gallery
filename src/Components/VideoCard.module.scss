@@ -39,3 +39,24 @@
     }
   }
 }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .videoCardContainer {
+    flex: 1 0 30%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .videoCardContainer {
+    flex: 1 0 45%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 400px) {
+  .videoCardContainer {
+    flex: 1 0 90%;
+  }
+}

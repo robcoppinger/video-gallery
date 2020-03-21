@@ -99,7 +99,7 @@ button:hover {
     padding: 10px;
     padding-top: 0;
     padding-bottom: 0;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
   }
 }
