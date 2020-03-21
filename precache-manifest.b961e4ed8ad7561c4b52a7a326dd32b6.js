@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "842a6259074c932d88619cf63951c4d7",
+    "revision": "80d2f459e9d1b7e3de7a209b22df7d6f",
     "url": "/video-gallery/index.html"
   },
   {
-    "revision": "bce56fd3a1b5f22461dc",
-    "url": "/video-gallery/static/css/main.b0de6681.chunk.css"
+    "revision": "13b28dcca2aa34bd534b",
+    "url": "/video-gallery/static/css/main.274205e9.chunk.css"
   },
   {
     "revision": "f9296ce81dffffe03afe",
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/video-gallery/static/js/2.9828a557.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bce56fd3a1b5f22461dc",
-    "url": "/video-gallery/static/js/main.41379a08.chunk.js"
+    "revision": "13b28dcca2aa34bd534b",
+    "url": "/video-gallery/static/js/main.4b82c9bc.chunk.js"
   },
   {
     "revision": "46ed509b2fc04cb10eed",
     "url": "/video-gallery/static/js/runtime-main.284a0883.js"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/video-gallery/static/media/logo.5d5d9eef.svg"
+    "revision": "796f306a801038e7c1540297788d99ad",
+    "url": "/video-gallery/static/media/IG_Glyph_Fill.796f306a.png"
   }
 ]);
