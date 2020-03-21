@@ -18,6 +18,7 @@ export const Footer = () => (
           <img
             className="footerIcon"
             src={require("../images/IG_Glyph_Fill.png")}
+            alt="Instagram icon"
           />
         </ReactGA.OutboundLink>
         <ReactGA.OutboundLink
@@ -28,6 +29,7 @@ export const Footer = () => (
           <img
             className="footerIcon"
             src={require("../images/GitHub-Mark-Light-64px.png")}
+            alt="Github icon"
           />
         </ReactGA.OutboundLink>
       </div>

@@ -15,13 +15,14 @@ export const VideoCard = ({ video }) => {
     <div className={styles.videoCardContainer}>
       <div className={styles.imageContainer}>
         <a href={video.video} onClick={onClick} target="blank">
-          <img src={video.thumbnail} />
+          <img src={video.thumbnail} alt={video.title} />
           <div className={styles.titleContainer}>
             <h3>{video.title}</h3>
           </div>
         </a>
       </div>
       <div className={styles.infoContainer}>
+        {video.description && <p>{video.description}</p>}
         {video.starring.length > 0 && (
           <p>
             <b>Starring: </b>
