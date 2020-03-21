@@ -69,6 +69,7 @@ button:hover {
 }
 
 .contentContainer {
+  width: 100%;
   margin: 1px auto;
   margin-top: 0;
   margin-bottom: 0;

@@ -1,16 +1,12 @@
 html {
-  --dark-color: #333333;
+  --dark-color: #2a2a2a;
   --light-text: #dcdcdc;
 }
 .header {
   overflow: hidden;
   padding: 2rem;
   background-color: var(--dark-color);
-  h1,
-  h2,
-  h3 {
-    color: var(--light-text);
-  }
+  color: var(--light-text);
 }
 .body {
   min-height: calc(100vh - 26rem - 6px);
@@ -43,13 +39,77 @@ html {
 }
 
 .gallery {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-
+  display: flex;
+  flex-direction: row;
+  .filterImg {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 2rem;
+    top: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    @media only screen and (max-width: 1200px) {
+      top: 2rem;
+    }
+  }
   .videoContentContainer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  .sidePanel {
+    z-index: 2;
+    width: 0;
+    margin-top: -7rem;
+    background-color: #313336;
+    color: var(--light-text);
+    transition: 0.5s;
+    min-height: calc(100vh - 19rem);
+    overflow-x: hidden;
+    white-space: nowrap;
+    &[data-visible^="true"] {
+      padding: 2rem;
+      width: 35rem;
+      @media only screen and (max-width: 992px) {
+        width: 60rem;
+      }
+      @media only screen and (max-width: 412px) {
+        width: 80vw;
+      }
+    }
+    h3 {
+      color: white;
+    }
+    .sidepanelHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom-width: 1px;
+      border-color: #46494d;
+      border-bottom-style: solid;
+
+      img {
+        cursor: pointer;
+        width: 25px;
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .sidePanel {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
 }
