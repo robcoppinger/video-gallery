@@ -7,6 +7,33 @@ html {
   padding: 2rem;
   background-color: var(--dark-color);
   color: var(--light-text);
+
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 32px;
+      width: 32px;
+      margin-right: 2rem;
+      margin-left: 2rem;
+
+      @media only screen and (max-width: 1200px) {
+        height: 28px;
+        width: 28px;
+      }
+
+      @media only screen and (max-width: 992px) {
+        height: 24px;
+        width: 24px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
 }
 .body {
   min-height: calc(100vh - 26rem - 6px);
